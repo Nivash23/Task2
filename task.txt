@@ -1,0 +1,30 @@
+   HTTP 1.1:
+
+1) It allows client to send multiple requests along the
+   same connection without waiting for a response for
+   each from server.it is best developement of http 1.1
+   compare with http 1.0.
+
+   HTTP 2:
+   
+    It makes web pages load faster and more efficiently by
+    streamlining communication between the browser
+    and server. 
+
+
+2)Javascript object
+   
+  javascript objects are considered as jason document
+  like within a declare one variable and open curly
+  brace we should have give key and value like decalaration
+  and initializing type syntax for creating javascript 
+  object is
+  SYNTAX:
+     let person={
+                   name:'Nivash',
+                   gender:'Male',
+                   age:20  
+                 }
+
+  
+  
