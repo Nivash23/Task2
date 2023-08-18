@@ -1,0 +1,26 @@
+1)Difference between document & windows object
+  
+  document:
+   The document is provided as object API by the 
+   javascript  host environment.Document is commonly
+   used for access the elements present in html by 
+   using unique id of elements or class name of 
+   of each elements.it is also called as DOM.
+   without using document we cannot perform 
+   any task in html.
+
+Windows object:
+    
+  The Window object represents the window in the browser.
+  window object is automatically created from the browser.
+  All browsers support the Window object. Global variables
+  are the properties of the Window objects, and global 
+  functions are the methods of the Window object 
+  the window objects are having many methods and finding 
+  the location of the page and track any documents
+  using dot operator.
+  the methods are
+    
+     *windows.close()
+     *windows.setTimeOut();
+     *windows.clearOut() 
