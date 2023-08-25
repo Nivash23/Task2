@@ -1,0 +1,82 @@
+1)Iterate json object
+
+USING in IN FOR LOOP
+
+let Resume = {
+    name: "R.Nivash",
+    ContactDetails: {
+        phoneNo: "9360154633",
+        email: "billanivash52@gmail.com",
+        linkedin: "https://www.linkedin.com/in/nivash-r-845a61269",
+        github: "https://github.com/Nivash23/Task2"
+    },
+    PersonalSkills: "TimeManagement,Team Work,Problem-solving,web design",
+    Language: "Tamil,English",
+    "Technicalskills": "c,java,html,css"
+
+
+};
+
+    for (let key in Resume)
+    {
+        console.log(key, Resume[key]);
+    }
+
+USING OF IN FOR LOOP
+
+let Resume = {
+    name: "R.Nivash",
+    ContactDetails: {
+        phoneNo: "9360154633",
+        email: "billanivash52@gmail.com",
+        linkedin: "https://www.linkedin.com/in/nivash-r-845a61269",
+        github: "https://github.com/Nivash23/Task2"
+    },
+    PersonalSkills: "TimeManagement,Team Work,Problem-solving,web design",
+    Language: "Tamil,English",
+    "Technicalskills": "c,java,html,css"
+
+
+};
+
+    for (let key of Object.keys(Resume))
+    {
+        console.log(key,Resume[key]);
+    }
+
+
+
+
+2)Own resume in json document
+
+let Resume= {
+    name: "R.Nivash",
+    ContactDetails: {
+        phoneNo: "9360154633",
+        email: "billanivash52@gmail.com",
+        linkedin: "https://www.linkedin.com/in/nivash-r-845a61269",
+        github:"https://github.com/Nivash23/Task2"
+    },
+    PersonalSkills: "TimeManagement,Team Work,Problem-solving,web design",
+    Language: "Tamil,English",
+    Technicalskills:"c,java,html,css"
+
+
+};
+console.log(JSON.stringify(Resume));
+
+
+3)Difference b/w window,screen ,document
+
+window:
+ window is the actual global object It is used to display webpage in browser
+it will point the location of the webpage.
+
+screen:
+screen is collection of user interface properties of the webpage.
+
+document:
+ All the elements are stored as a document in out webpage if we 
+want to access that elements using key value only the key value
+is act as a index of the particular element. 
+ 
