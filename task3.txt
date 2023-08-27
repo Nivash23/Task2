@@ -1,0 +1,57 @@
+1)
+
+let obj1={
+name:"Person",
+age:5
+};
+let obj2={
+age:5,
+name:"Person"
+};
+console.log(obj1==obj2);
+
+
+
+2)
+
+let xml = require('xhr2');
+let xhr = new xml();
+xhr.open("GET", 'https://restcountries.com/v3.1/all');
+xhr.onload = function ()
+{
+    let countries = JSON.parse(xhr.responseText);
+    let countryflags = [];
+    for (let country of countries)
+    {
+        // console.log(country)
+        countryflags.push(country['flag']);
+        console.log(countryflags);
+
+        }
+    // console.log(xhr.responseText);
+}
+xhr.send();
+
+
+
+
+
+3)
+
+let xml = require('xhr2');
+let xhr = new xml();
+xhr.open("GET", 'https://restcountries.com/v3.1/all');
+xhr.onload = function ()
+{
+    let countries = JSON.parse(xhr.responseText);
+    let details = [];
+    for (let country of countries)
+    {
+        // console.log(country)
+        details.push(country['name'], country['region'],country['subregion'],country['population']);
+        console.log(details);
+
+        }
+    // console.log(xhr.responseText);
+}
+xhr.send();
