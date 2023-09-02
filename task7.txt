@@ -1,0 +1,81 @@
+1)
+const Xmlhttprequest = require('xhr2');
+const xhr = new Xmlhttprequest();
+
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+xhr.onload = function () {
+    let obj = JSON.parse(xhr.responseText);
+    
+    let pop = 200000;
+    let continent = obj.filter(element => element.continent=='Asia');
+    console.log(continent);
+
+}
+xhr.send();
+
+
+2)
+const Xmlhttprequest = require('xhr2');
+const xhr = new Xmlhttprequest();
+
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+xhr.onload = function () {
+    let obj = JSON.parse(xhr.responseText);
+    
+    let pop = 200000;
+    let continent = obj.filter(element => element.population<pop);
+    console.log(continent);
+
+}
+xhr.send();
+
+3)
+const Xmlhttprequest = require('xhr2');
+const xhr = new Xmlhttprequest();
+
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+xhr.onload = function () {
+    let obj = JSON.parse(xhr.responseText);
+    obj.forEach((val) => {
+        console.log(val['name'], val['capital'], val['flags']);
+    })
+
+}
+xhr.send();
+4)
+const Xmlhttprequest = require('xhr2');
+const xhr = new Xmlhttprequest();
+
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+xhr.onload = function () {
+    let obj = JSON.parse(xhr.responseText);
+    
+    // let pop = 200000;
+    // let continent = obj.filter(element => element.population<pop);
+    // console.log(continent);
+    obj.forEach((val) => {
+        console.log(val['name'], val['capital'], val['flags']);
+    })
+
+}
+xhr.send();
+
+5)
+const Xmlhttprequest = require('xhr2');
+const xhr = new Xmlhttprequest();
+
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+xhr.onload = function () {
+    let obj = JSON.parse(xhr.responseText);
+    
+    // let pop = 200000;
+    // let continent = obj.filter(element => element.population<pop);
+    // console.log(continent);
+    let totalpopulation;
+    obj.forEach((val) => {
+        totalpopulation = +val['population'];
+        console.log(totalpopulation);
+    })
+
+}
+xhr.send();
