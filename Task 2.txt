@@ -1,25 +1,29 @@
 1)Difference between document & windows object
   
   document:
-   The document is provided as object API by the 
-   javascript  host environment.Document is commonly
-   used for access the elements present in html by 
-   using unique id of elements or class name of 
-   of each elements.it is also called as DOM.
-   without using document we cannot perform 
-   any task in html.
+   The Document object represents the entire HTML document within a web page.
+   It serves as an interface to manipulate the content and structure of the document dynamically.
+   When you interact with the Document object,
+   you're essentially working with the HTML elements,
+  such as paragraphs, headings, images, forms, and more.
+
+*The Document Object Model (DOM) is a programming interface provided by the Document object.
+It allows developers to interact with and modify the content and structure of an HTML document dynamically.
+With the DOM, you can create, delete, or modify elements within the document.
+
+* The Document object is at the top of the DOM hierarchy. It serves as the entry point
+to access other elements within the document, such as HTML, head, and body.
 
 Windows object:
     
-  The Window object represents the window in the browser.
-  window object is automatically created from the browser.
-  All browsers support the Window object. Global variables
-  are the properties of the Window objects, and global 
-  functions are the methods of the Window object 
-  the window objects are having many methods and finding 
-  the location of the page and track any documents
-  using dot operator.
-  the methods are
+ On the other hand, the Window object represents the browser window or a frame within a window.
+It encompasses not only the current document but also other browser-related functionalities.
+The Window object acts as the global object for JavaScript in a browser environment.
+The Window object is the global object in the browser environment. Variables and functions declared without
+a specific scope become properties and methods of the Window object.
+
+* The Window object provides methods to interact with the browser itself,
+  such as opening or closing windows, navigating to URLs, and handling alerts.
     
      *windows.close()
      *windows.setTimeOut();
